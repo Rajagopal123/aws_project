@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment - AWS Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Assignment</h1>
+        <h2>Course Name: AWS Cloud Computing</h2>
+        
+        <div class="team-members">
+            <div class="member">
+                <p><strong>RAJAGOPAL.B</strong></p>
+                <p>Reg No: 22BEE0063</p>
+            </div>
+            <div class="member">
+                <p><strong>SABARISHKANNA.C</strong></p>
+                <p>Reg No: 22BEE0037</p>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box" onclick="redirectTo('https://vtop.vit.ac.in/vtop/login')">
+                <h3>College Portal</h3>
+                <p>Click to access the college portal.</p>
+            </div>
+            <div class="box" onclick="redirectTo('https://github.com/Rajagopal123/aws_project')">
+                <h3>GitHub Repository</h3>
+                <p>Click to view our assignment files.</p>
+            </div>
+            <div class="box" onclick="redirectTo('https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Instances:')">
+                <h3>AWS EC2 Instances</h3>
+                <p>Click to access our EC2 instance.</p>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <h3>Comments/Suggestions</h3>
+            <textarea id="userComment" rows="4" placeholder="Please enter your comments or suggestions here..."></textarea>
+            <button onclick="submitComment()">Submit</button>
+            <p class="note">Note: Your comment will be stored in AWS S3 services.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
